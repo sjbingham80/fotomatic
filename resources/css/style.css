@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+
 }
 
 .center {
@@ -112,11 +113,16 @@ header .mobile {
 
 /* Sign Up Section */
 
+
 #sign-up-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -169,7 +175,6 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
     width: auto;
     height: auto;
     background-color: transparent;
@@ -227,6 +232,15 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
 }
 
 .feature h2 {
@@ -296,6 +310,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -332,23 +347,32 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+.content-center {
+  text-align: center;
+}
+
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
+  margin-left: 30px;
 }
 
 @media only screen and (max-width: 760px) {
